@@ -1,0 +1,139 @@
+:root {
+  --background-color: #0e022b;
+  --header-bg-color: #5f34c7;
+  --header-text-color: #ffffff;
+  --container-text-color: #ff47fd;
+  --heading-color: #ffffff;
+  --link-color: #f1c40f;
+  --link-hover-color: #ff47fd;
+  --footer-bg-color: #5f34c7;
+  --footer-text-color: #ffffff;
+  --secondary-text-color: #aaa;
+  --card-bg-color: #4a2e93; 
+  --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  --smooth-font: "Roboto", sans-serif; 
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+  color: var(--header-text-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: var(--header-bg-color);
+  color: var(--header-text-color);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  box-shadow: var(--card-shadow); 
+  border-radius: 0px 0px 8px 8px; 
+  font-family: var(--smooth-font); 
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.2em;
+  padding-left: 20px; 
+  flex-grow: 1;
+  font-family: var(--smooth-font);
+  letter-spacing: 0.5px; 
+}
+
+nav {
+  background-color: var(--card-bg-color);
+  padding: 10px 20px;
+  padding-bottom: 5px;
+  box-shadow: var(--card-shadow);
+  border-radius: 8px;
+}
+
+nav a {
+  color: var(--link-color);
+  font-weight: bold;
+  transition: color 0.3s ease, text-decoration-color 0.3s ease;
+  margin-left: 15px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--link-hover-color);
+}
+
+.container {
+  width: 80%;
+  margin: 20px auto;
+  color: var(--container-text-color);
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 1;
+}
+
+.container h2 {
+  color: var(--heading-color);
+}
+
+h2 {
+  margin-top: 20px;
+}
+
+p {
+  font-size: 1.1em;
+  margin: 15px 0;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9em;
+  padding: 10px 0px;
+  background-color: var(--footer-bg-color);
+  color: var(--footer-text-color);
+  position: static;
+  width: 100%;
+}
+
+.concept {
+  margin-bottom: 30px;
+}
+
+.concept p {
+  line-height: 1.8;
+  margin: 15px 0;
+}
+
+.concept h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: var(--link-color);
+}
+
+.troll {
+  font-style: italic;
+  color: var(--secondary-text-color);
+}
+
+a {
+  text-decoration: underline;
+  color: var(--link-color);
+  font-weight: bold;
+  transition: color 0.3s ease, text-decoration-color 0.3s ease;
+}
+
+a:hover {
+  color: var(--link-hover-color);
+  text-decoration-color: var(--link-hover-color);
+}
+
+.yellow-heading {
+  color: var(--link-color);
+}
